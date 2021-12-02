@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MACA GRUPO CONSULTOR</title>
+</head>
+
+<body class="bg-white" style="font-family: 'Montserrat', sans-serif;">
+
+
+<header class=" fixed top-0 w-full z-10">
+        
+<div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 border-b-2 border-gray-200">
+    <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+            <div class="flex"> 
+                <img src="/logo.png" alt="" class="w-12 h-12 ml-2">
+            </div>
+        <a href="#" class="flex text-2xl font-bold text-blue-600 rounded-lg focus:outline-none focus:shadow-outline">MACA</a>
+        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class=" flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Inicio</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Servicios</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Nosotros</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contacto</a>   
+        </nav>
+    </div>
+</div>
+    
+</header>
+
+
+<main class="z-0">
+    <!--presentacion -->
+    <section class="text-gray-600 body-font mt-5 md:mx-5">
+      <div class="container mx-auto flex px-5 pt-10 pb-24 md:flex-row flex-col items-center">
+        <div class=" lg:w-full md:w-1/2 w-6/6 mb-10 md:mb-0">
+          <img class="object-cover object-center rounded-md" alt="hero" src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg">
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font font-semibold text-xl md:text-2xl mb-4 font-medium text-blue-600">GRUPO CONSULTORES CORREDORES DE SEGUROS Y FINANZAS</h1>
+          <p class="mb-8 leading-relaxed">Ofrecemos el mejor servicio, la mejor capacidad, el mejor asesoramiento y sobre todo el cumulo de experiencia que nos reslapda...</p>
+          <div class="mx-auto">
+            <button class="inline-flex text-white bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg">Contactanos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tipos de seguro -->
+      
+      <section class="text-gray-600 body-font md:mx-20">
+        <div class="grid justify-center sm:text-3xl text-2xl font-semibold title-font mb-4 text-blue-600"><h1>Servicios</h1></div>
+        <div class="container px-5 pb-10 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3 transform hover:rotate-3 duration-200">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1597328290883-50c5787b7c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blog">
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Autos</h1>
+                  <p class="leading-relaxed mb-3">Contamos con los seguros que responden a las mas exigentes necesidades, presentando la mejor evaluacion de seguros para auto.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 transform hover:rotate-3 duration-200">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2015/05/26/09/33/canada-784392_1280.jpg" alt="blog">
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Camiones</h1>
+                  <p class="leading-relaxed mb-3">Para los seguro de camiones puede tener la certeza de cibtar cib coberturas completas y un excelente servicio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 transform hover:rotate-3 duration-200">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2017/11/13/16/05/fire-2946038_1280.jpg" alt="blog">
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Daños</h1>
+                  <p class="leading-relaxed mb-3">Este tipo de seguros estan diseñados para cubrir diferentes riesgos, tales como, incendios, teremotos, inundacion, etc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--mision-->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-14 mx-auto">
+          <div class="flex flex-col text-center w-full mb-5">
+            <h1 class="sm:text-3xl text-2xl title-font mb-4 text-blue-600 font-semibold">Mision</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Aportar soluciones otorgando asesoramiento adecuado que haga facil la decision de nuestros clientes para proteger su patrimonio, utilizando la experiencia y el mejor respaldo para elaborar distintas alternativas de cobertura.</p>
+          </div>
+          <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-col">
+              <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-lg h-96 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80">
+                </div>
+              </div>
+            </div>
+          </section>
+      </section>
+
+    <!--mapa y formulario -->
+    <section class="text-gray-600 body-font relative mx-5 md:mx-20">
+        <div class="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+            <iframe class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.0081475513301!2d-117.03366177079354!3d32.525276529573944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d949ad5023b083%3A0xea0601cb0f70d383!2sAv.%20Miguel%20Negrete%201841%2C%20Zona%20Centro%2C%2022000%20Tijuana%2C%20B.C.!5e0!3m2!1ses!2smx!4v1638129804446!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+              <div class="lg:w-1/2 px-6">
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Direccion</h2>
+                <p class="mt-1">Av. Negrete No.1841 Local 20 Zona Centro, Tijuana B.C., C.P. 22000</p>
+              </div>
+              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Correo</h2>
+                <a class="text-blue-500 leading-relaxed">grupoconsultores01@gmail.com</a>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">TELEFONO</h2>
+                <p class="leading-relaxed">(664)-622-5408</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <h2 class="text-blue-600 text-lg mb-1 font-medium title-font">CONTACTANOS</h2>
+            <p class="leading-relaxed mb-5 text-gray-600">Estamos para servirte</p>
+            <div class="relative mb-4">
+              <label for="name" class="leading-7 text-sm text-gray-600">Nombre</label>
+              <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-600">Correo Electronico</label>
+              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-600">Mensaje</label>
+              <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Enviar</button>
+            <p class="text-xs text-gray-500 mt-3">Atencion a clientes por medio de correo electronico.</p>
+          </div>
+        </div>
+      </section>
+    
+</main>
+
+
+<footer class="text-gray-600 body-font border-t-2 border-gray-200">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="/logo.png" alt="" class="h-10 w-10">
+      <span class="ml-3 text-xl">MACA GRUPO CONSULTORES</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 MACA —
+      <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Developed by AR</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+</body>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
+
