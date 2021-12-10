@@ -1,19 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>MACA GRUPO CONSULTOR</title>
+    <title>MACA</title>
 </head>
 
-<body class="bg-white" style="font-family: 'Montserrat', sans-serif;">
+<body class="bg-white" style="font-family: sans-serif;">
 
 
 <header class=" fixed top-0 w-full z-10">
@@ -21,10 +21,7 @@
 <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 border-b-2 border-gray-200">
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
-            <div class="flex"> 
-                <img src="/logo.png" alt="" class="w-12 h-12 ml-2">
-            </div>
-        <a href="#" class="flex text-2xl font-bold text-blue-600 rounded-lg focus:outline-none focus:shadow-outline">MACA</a>
+        <a href="#" class="text-lg font-semibold text-blue-600 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">MACA</a>
         <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
             <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -46,64 +43,139 @@
 
 <main class="z-0">
     <!--presentacion -->
-    <section class="text-gray-600 body-font mt-5 md:mx-5">
-      <div class="container mx-auto flex px-5 pt-10 pb-24 md:flex-row flex-col items-center">
-        <div class=" lg:w-full md:w-1/2 w-6/6 mb-10 md:mb-0">
-          <img class="object-cover object-center rounded-md" alt="hero" src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg">
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section class="text-gray-600 body-font mt-5 md:mx-5">
+            <div class="container mx-auto flex px-5 pt-10 pb-24 md:flex-row flex-col items-center">
+              <div class=" lg:w-full md:w-1/2 w-6/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded-md" alt="hero" src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg">
+              </div>
+              <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font text-xl md:text-2xl mb-4 font-medium text-blue-600">GRUPO CONSULTORES CORREDORES DE SEGUROS Y FINANZAS</h1>
+                <p class="mb-8 leading-relaxed">Ofrecemos el mejor servicio, la mejor capacidad, el mejor asesoramiento y sobre todo el cumulo de experiencia que nos reslapda...</p>
+                <div class="mx-auto">
+                  <button class="inline-flex text-white bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg">Contactanos</button>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 class="title-font font-semibold text-xl md:text-2xl mb-4 font-medium text-blue-600">GRUPO CONSULTORES CORREDORES DE SEGUROS Y FINANZAS</h1>
-          <p class="mb-8 leading-relaxed">Ofrecemos el mejor servicio, la mejor capacidad, el mejor asesoramiento y sobre todo el cumulo de experiencia que nos reslapda...</p>
-          <div class="mx-auto">
-            <button class="inline-flex text-white bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg">Contactanos</button>
+        <div class="swiper-slide">
+          <section class="text-gray-600 body-font mt-10 md:mx-5">
+            <div class="container mx-auto flex px-5 pt-10 pb-24 md:flex-row flex-col items-center">
+              <div class=" lg:w-full md:w-1/2 w-6/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded-md" alt="hero" src="https://cdn.pixabay.com/photo/2016/05/02/23/44/bmw-1368280_960_720.jpg">
+              </div>
+              <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font text-xl md:text-2xl mb-4 font-medium text-blue-600">GRUPO CONSULTORES CORREDORES DE SEGUROS Y FINANZAS</h1>
+                <p class="mb-8 leading-relaxed">Ofrecemos el mejor servicio, la mejor capacidad, el mejor asesoramiento y sobre todo el cumulo de experiencia que nos reslapda...</p>
+                <div class="mx-auto">
+                  <button class="inline-flex text-white bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg">Contactanos</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="swiper-button-next-2"></div>
+      <div class="swiper-button-prev-2"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- tipos de seguro -->
+    <section class="text-gray-600 body-font md:mx-20">
+      <div class="grid justify-center sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-600"><h1>Servicios</h1></div>
+      <div class="container px-5 pb-10 mx-auto">
+        <div class="flex flex-wrap -m-4">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide p-6">
+          <div class="p-4 md:w-full transform hover:rotate-3 duration-200" style="height: 450px;">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1597328290883-50c5787b7c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Autos</h1>
+                <p class="leading-relaxed mb-3">Contamos con los seguros que responden a las mas exigentes necesidades, presentando la mejor evaluacion de seguros para auto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-6">
+          <div class="p-4 md:w-full transform hover:rotate-3 duration-200" style="height: 450px;">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="h-48 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2015/05/26/09/33/canada-784392_1280.jpg" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Camiones</h1>
+                <p class="leading-relaxed mb-3">Para los seguro de camiones puede tener la certeza de cibtar cib coberturas completas y un excelente servicio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-6">
+          <div class="p-4 md:w-full transform hover:rotate-3 duration-200" style="height: 450px;">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="h-48 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2017/11/13/16/05/fire-2946038_1280.jpg" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Daños</h1>
+                <p class="leading-relaxed mb-3">Este tipo de seguros estan diseñados para cubrir diferentes riesgos, tales como, incendios, teremotos, inundacion, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-6">
+          <div class="p-4 md:w-full transform hover:rotate-3 duration-200" style="height: 450px;">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="h-48 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2012/12/24/08/39/disabled-72211_960_720.jpg" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Gastos médicos mayores</h1>
+                <p class="leading-relaxed mb-3">Seguro que te protege a ti y a tu familia ante los gastos suscitados por hospitalización, tratamientos médicos o cualquier otro servicio de este rubro.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-6">
+          <div class="p-4 md:w-full transform hover:rotate-3 duration-200" style="height: 450px;">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="h-48 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2021/01/09/15/30/house-5902664_960_720.jpg" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Seguro de vida</h1>
+                <p class="leading-relaxed mb-3">Este seguro te ofrece la tranquilidad de un respaldo económico a tus seres queridos en caso de incidencias personales, resguardando tu patrimonio y protegiendo a tus allegados.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-slide p-6">
+          <div class="p-4 md:w-full transform hover:rotate-3 duration-200" style="height: 450px;">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="h-48 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2017/06/20/05/00/death-2421820_960_720.jpg" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Gastos funerarios</h1>
+                <p class="leading-relaxed mb-3">Seguro en el cual existe una reserva de fondos en caso del fallecimiento repentino, frenando los gastos que puedan surgir por procedimientos de servicios funerarios tales como la cremación, ataúd, velación, etc.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- tipos de seguro -->
-      
-      <section class="text-gray-600 body-font md:mx-20">
-        <div class="grid justify-center sm:text-3xl text-2xl font-semibold title-font mb-4 text-blue-600"><h1>Servicios</h1></div>
-        <div class="container px-5 pb-10 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/3 transform hover:rotate-3 duration-200">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1597328290883-50c5787b7c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blog">
-                <div class="p-6">
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Autos</h1>
-                  <p class="leading-relaxed mb-3">Contamos con los seguros que responden a las mas exigentes necesidades, presentando la mejor evaluacion de seguros para auto.</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 transform hover:rotate-3 duration-200">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2015/05/26/09/33/canada-784392_1280.jpg" alt="blog">
-                <div class="p-6">
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Camiones</h1>
-                  <p class="leading-relaxed mb-3">Para los seguro de camiones puede tener la certeza de cibtar cib coberturas completas y un excelente servicio.</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 transform hover:rotate-3 duration-200">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://cdn.pixabay.com/photo/2017/11/13/16/05/fire-2946038_1280.jpg" alt="blog">
-                <div class="p-6">
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Daños</h1>
-                  <p class="leading-relaxed mb-3">Este tipo de seguros estan diseñados para cubrir diferentes riesgos, tales como, incendios, teremotos, inundacion, etc.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+</section>
 
       <!--mision-->
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-14 mx-auto">
           <div class="flex flex-col text-center w-full mb-5">
-            <h1 class="sm:text-3xl text-2xl title-font mb-4 text-blue-600 font-semibold">Mision</h1>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-1 text-blue-600">Mision</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Aportar soluciones otorgando asesoramiento adecuado que haga facil la decision de nuestros clientes para proteger su patrimonio, utilizando la experiencia y el mejor respaldo para elaborar distintas alternativas de cobertura.</p>
+            <h2 class="sm:text-3xl text-2xl title-font mt-6 mb-1 text-blue-600 ">Nuestra mision en la vigencia de su poliza</h2>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Nuestro Despacho Provee soluciones inmediatas y oportunas para satisfacer con exito las necesidades requeridas.
+              Supervisamos la responsabilidad del trámite ante la compañia de seguros para la emisión de la póliza, de acuerdo a las condiciones  contratadas,  
+              así como por los endosos correspondientes a movimientos de altas o bajas del personal asegurado de su empresa.</p>
           </div>
           <section class="text-gray-600 body-font">
             <div class="container mx-auto flex flex-col">
@@ -120,17 +192,17 @@
     <section class="text-gray-600 body-font relative mx-5 md:mx-20">
         <div class="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
           <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <iframe class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.0081475513301!2d-117.03366177079354!3d32.525276529573944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d949ad5023b083%3A0xea0601cb0f70d383!2sAv.%20Miguel%20Negrete%201841%2C%20Zona%20Centro%2C%2022000%20Tijuana%2C%20B.C.!5e0!3m2!1ses!2smx!4v1638129804446!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12405.715800146267!2d-116.98885672044429!3d32.52799357392324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94875d6e6b3d5%3A0x12c528793fc3f572!2sInstituto%20Tecnol%C3%B3gico%20de%20Tijuana!5e0!3m2!1ses!2smx!4v1637994828655!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
               <div class="lg:w-1/2 px-6">
                 <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Direccion</h2>
-                <p class="mt-1">Av. Negrete No.1841 Local 20 Zona Centro, Tijuana B.C., C.P. 22000</p>
+                <p class="mt-1">DIRECCION DE LAS OFICINAS AQUI</p>
               </div>
               <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Correo</h2>
-                <a class="text-blue-500 leading-relaxed">grupoconsultores01@gmail.com</a>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">CORREO</h2>
+                <a class="text-blue-500 leading-relaxed">Seguros@gmail.com</a>
                 <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">TELEFONO</h2>
-                <p class="leading-relaxed">(664)-622-5408</p>
+                <p class="leading-relaxed">123-456-7890</p>
               </div>
             </div>
           </div>
@@ -161,11 +233,13 @@
 <footer class="text-gray-600 body-font border-t-2 border-gray-200">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <img src="/logo.png" alt="" class="h-10 w-10">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
       <span class="ml-3 text-xl">MACA GRUPO CONSULTORES</span>
     </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 MACA —
-      <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Developed by AR</a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 Seguros —
+      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Developed by AR</a>
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a class="text-gray-500">
@@ -193,12 +267,65 @@
     </span>
   </div>
 </footer>
+
+
 </body>
 
     <!-- Scripts -->
+
+    
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+          900: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: true,
+          },
+          1300: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            loop: true,
+            autoplay: true,
+          },
+        }
+      });
+
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+    nextEl: '.swiper-button-next-2',
+    prevEl: '.swiper-button-prev-2',
+  },
+      });
+
+    </script>
+    <script src="https://kit.fontawesome.com/c4db48404f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/490c71ac8a.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
